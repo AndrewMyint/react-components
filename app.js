@@ -1,8 +1,14 @@
 // TODO
-var GroceryList = (props) => (
+var List = (props) => (
+  <ul>
+    <li>{props.items[0]}</li>
+    <li>{props.items[1]}</li>
+  </ul>
+)
+var GroceryList = () => (
   <div>
-    <li>{props.item1}</li>
-    <li>{props.item2}</li>
+    <List items={['cucumbers','kale']}/>
   </div>
 );
-ReactDOM.render(<GroceryList item1 = "item1" item2 = "item2"/>, document.getElementById("app"));
+ReactDOM.render(<GroceryList/>, document.getElementById("app"));
+
