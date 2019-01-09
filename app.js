@@ -1,26 +1,34 @@
 // TODO
-// var List = (props) => (
-//   <ul>
-//     <li>{props.items[0]}</li>
-//     <li>{props.items[1]}</li>
-//   </ul>
+// var GroceryList = (props) => (
+  //   <div>
+  //     <li>{props.item1}</li>
+  //     <li>{props.item2}</li>
+  //   </div>
+  // );
+  // // var item1 = 'banana';
+  // // var item2 = 'apple';
+  // ReactDOM.render(<GroceryList item1 = {'banana'} item2 = {'apple'}/>, document.getElementById("app"));
+
+
+
+// var Cucumber = (props) => (
+//   <li>{props.item}</li>
 // )
 
+// var Kale = (props) => (
+//   <li>{props.item}</li>
+// )
 
-
-
-var Cucumber = (props) => (
-  <li>{props.item}</li>
-)
-
-var Kale = (props) => (
-  <li>{props.item}</li>
+var GroceryListItem = (props) => (
+  <ul>
+    <li>{props.groceryItems[0]}</li>
+    <li>{props.groceryItems[1]}</li>
+  </ul>
 )
 
 var GroceryList = () => (
   <div>
-    <Cucumber item = "cucumber"/>
-    <Kale item = "kale"/>
+    <GroceryListItem groceryItems={['bananas', 'apples']}/>
   </div>
 );
 
